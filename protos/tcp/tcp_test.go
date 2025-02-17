@@ -15,6 +15,7 @@
 // specific language governing permissions and limitations
 // under the License.
 
+//go:build !integration
 // +build !integration
 
 package tcp
@@ -28,8 +29,8 @@ import (
 	"github.com/elastic/beats/libbeat/common"
 	"github.com/elastic/beats/packetbeat/protos"
 
+	"github.com/njcx/gopacket_dpdk/layers"
 	"github.com/stretchr/testify/assert"
-	"github.com/tsg/gopacket/layers"
 )
 
 // Test Constants

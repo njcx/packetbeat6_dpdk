@@ -15,6 +15,7 @@
 // specific language governing permissions and limitations
 // under the License.
 
+//go:build mage
 // +build mage
 
 package main
@@ -379,7 +380,7 @@ func generateWin64StaticWinpcap() error {
 	)
 }
 
-var pcapGoFile = mage.MustExpand("{{elastic_beats_dir}}/vendor/github.com/tsg/gopacket/pcap/pcap.go")
+var pcapGoFile = mage.MustExpand("{{elastic_beats_dir}}/vendor/github.com/njcx/gopacket_dpdk/pcap/pcap.go")
 
 var cgoDirectiveRegex = regexp.MustCompile(`(?m)#cgo .*(?:LDFLAGS|CFLAGS).*$`)
 

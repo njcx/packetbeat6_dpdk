@@ -22,9 +22,9 @@ import (
 	"io"
 	"time"
 
+	"github.com/njcx/gopacket_dpdk"
 	"github.com/njcx/gopacket_dpdk/layers"
 	"github.com/njcx/gopacket_dpdk/pcap"
-	"github.com/tsg/gopacket_dpdk"
 
 	"github.com/elastic/beats/libbeat/logp"
 )
