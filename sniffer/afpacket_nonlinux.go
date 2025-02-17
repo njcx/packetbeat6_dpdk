@@ -15,6 +15,7 @@
 // specific language governing permissions and limitations
 // under the License.
 
+//go:build !linux
 // +build !linux
 
 package sniffer
@@ -23,8 +24,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/tsg/gopacket"
-	"github.com/tsg/gopacket/layers"
+	"github.com/njcx/gopacket_dpdk"
+	"github.com/njcx/gopacket_dpdk/layers"
 )
 
 type afpacketHandle struct {
@@ -36,7 +37,7 @@ func newAfpacketHandle(device string, snaplen int, blockSize int, numBlocks int,
 	return nil, fmt.Errorf("Afpacket MMAP sniffing is only available on Linux")
 }
 
-func (h *afpacketHandle) ReadPacketData() (data []byte, ci gopacket.CaptureInfo, err error) {
+func (h *afpacketHandle) ReadPacketData() (data []byte, ci gopacket_dpdk.CaptureInfo, err error) {
 	return data, ci, fmt.Errorf("Afpacket MMAP sniffing is only available on Linux")
 }
 
