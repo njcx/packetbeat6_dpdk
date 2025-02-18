@@ -21,12 +21,12 @@ import (
 	"bytes"
 	"errors"
 	"fmt"
+	"github.com/njcx/libbeat_v6/logp"
+	"gopkg.in/inf.v0"
 	"math/big"
 	"reflect"
 	"strings"
 	"time"
-
-	"github.com/njcx/libbeat_v6/logp"
 )
 
 // TypeInfo describes a Cassandra specific data type.
