@@ -21,8 +21,8 @@ import (
 	"encoding/binary"
 	"time"
 
-	"github.com/elastic/beats/libbeat/common"
-	"github.com/elastic/beats/libbeat/logp"
+	"github.com/njcx/libbeat_v6/common"
+	"github.com/njcx/libbeat_v6/logp"
 	"github.com/njcx/packetbeat6_dpdk/procs"
 )
 

@@ -26,7 +26,7 @@ import (
 	"github.com/njcx/gopacket_dpdk/layers"
 	"github.com/njcx/gopacket_dpdk/pcap"
 
-	"github.com/elastic/beats/libbeat/logp"
+	"github.com/njcx/libbeat_v6/logp"
 )
 
 type fileHandler struct {

@@ -25,7 +25,7 @@ import (
 	// import protocol modules
 	_ "github.com/njcx/packetbeat6_dpdk/include"
 
-	cmd "github.com/elastic/beats/libbeat/cmd"
+	cmd "github.com/njcx/libbeat_v6/cmd"
 	"github.com/njcx/packetbeat6_dpdk/beater"
 )
 

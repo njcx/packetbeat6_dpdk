@@ -15,6 +15,7 @@
 // specific language governing permissions and limitations
 // under the License.
 
+//go:build !integration
 // +build !integration
 
 // Unit tests and benchmarks for the dns package.
@@ -29,7 +30,7 @@ package dns
 import (
 	"testing"
 
-	"github.com/elastic/beats/libbeat/common"
+	"github.com/njcx/libbeat_v6/common"
 
 	"github.com/stretchr/testify/assert"
 )

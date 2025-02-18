@@ -29,8 +29,8 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/elastic/beats/libbeat/common"
-	"github.com/elastic/beats/libbeat/common/streambuf"
+	"github.com/njcx/libbeat_v6/common"
+	"github.com/njcx/libbeat_v6/common/streambuf"
 )
 
 type textCommandType struct {

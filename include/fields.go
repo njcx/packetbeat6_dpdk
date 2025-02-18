@@ -20,7 +20,7 @@
 package include
 
 import (
-	"github.com/elastic/beats/libbeat/asset"
+	"github.com/njcx/libbeat_v6/asset"
 )
 
 func init() {

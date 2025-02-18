@@ -23,8 +23,8 @@ import (
 	"runtime"
 	"sync"
 
-	"github.com/elastic/beats/libbeat/common/streambuf"
-	"github.com/elastic/beats/libbeat/logp"
+	"github.com/njcx/libbeat_v6/common/streambuf"
+	"github.com/njcx/libbeat_v6/logp"
 )
 
 var (

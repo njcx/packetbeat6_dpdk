@@ -42,7 +42,7 @@ import (
 
 	"github.com/njcx/packetbeat6_dpdk/protos"
 
-	"github.com/elastic/beats/libbeat/common"
+	"github.com/njcx/libbeat_v6/common"
 
 	mkdns "github.com/miekg/dns"
 	"github.com/stretchr/testify/assert"

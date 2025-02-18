@@ -23,7 +23,7 @@ import (
 
 	"github.com/njcx/gopacket_dpdk/layers"
 
-	"github.com/elastic/beats/libbeat/logp"
+	"github.com/njcx/libbeat_v6/logp"
 )
 
 // TODO: more types (that are not provided as constants in gopacket_dpdk)

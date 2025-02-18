@@ -26,7 +26,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/elastic/beats/libbeat/common"
+	"github.com/njcx/libbeat_v6/common"
 	"github.com/njcx/packetbeat6_dpdk/protos"
 
 	"github.com/njcx/gopacket_dpdk/layers"

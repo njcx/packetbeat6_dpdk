@@ -26,11 +26,11 @@ import (
 
 	"github.com/njcx/gopacket_dpdk/layers"
 
-	"github.com/elastic/beats/libbeat/beat"
-	"github.com/elastic/beats/libbeat/common"
-	"github.com/elastic/beats/libbeat/logp"
-	"github.com/elastic/beats/libbeat/processors"
-	"github.com/elastic/beats/libbeat/service"
+	"github.com/njcx/libbeat_v6/beat"
+	"github.com/njcx/libbeat_v6/common"
+	"github.com/njcx/libbeat_v6/logp"
+	"github.com/njcx/libbeat_v6/processors"
+	"github.com/njcx/libbeat_v6/service"
 
 	"github.com/njcx/packetbeat6_dpdk/config"
 	"github.com/njcx/packetbeat6_dpdk/decoder"

@@ -20,8 +20,8 @@ package config
 import (
 	"time"
 
-	"github.com/elastic/beats/libbeat/common"
-	"github.com/elastic/beats/libbeat/processors"
+	"github.com/njcx/libbeat_v6/common"
+	"github.com/njcx/libbeat_v6/processors"
 	"github.com/njcx/packetbeat6_dpdk/procs"
 )
 
