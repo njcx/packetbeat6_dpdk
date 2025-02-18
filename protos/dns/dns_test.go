@@ -15,6 +15,7 @@
 // specific language governing permissions and limitations
 // under the License.
 
+//go:build !integration
 // +build !integration
 
 // Common variables, functions and tests for the dns package tests
@@ -35,7 +36,7 @@ import (
 	"github.com/elastic/beats/libbeat/common"
 	"github.com/elastic/beats/libbeat/logp"
 
-	"github.com/elastic/beats/packetbeat/protos"
+	"github.com/njcx/packetbeat6_dpdk/protos"
 )
 
 // Test Constants
@@ -176,25 +177,26 @@ func mapValueHelper(t testing.TB, m common.MapStr, keys []string) interface{} {
 // The validation provided my this method should only be used on results
 // published where the response packet was "sent".
 // The following fields are validated by this method:
-//     type (must be dns)
-//     src (ip and port)
-//     dst (ip and port)
-//     query
-//     resource
-//     method
-//     dns.id
-//     dns.op_code
-//     dns.flags
-//     dns.response_code
-//     dns.question.class
-//     dns.question.type
-//     dns.question.name
-//     dns.answers_count
-//     dns.answers.data
-//     dns.authorities_count
-//     dns.authorities
-//     dns.additionals_count
-//     dns.additionals
+//
+//	type (must be dns)
+//	src (ip and port)
+//	dst (ip and port)
+//	query
+//	resource
+//	method
+//	dns.id
+//	dns.op_code
+//	dns.flags
+//	dns.response_code
+//	dns.question.class
+//	dns.question.type
+//	dns.question.name
+//	dns.answers_count
+//	dns.answers.data
+//	dns.authorities_count
+//	dns.authorities
+//	dns.additionals_count
+//	dns.additionals
 func assertMapStrData(t testing.TB, m common.MapStr, q dnsTestMessage) {
 	assertRequest(t, m, q)
 

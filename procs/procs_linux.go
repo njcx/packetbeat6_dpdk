@@ -15,6 +15,7 @@
 // specific language governing permissions and limitations
 // under the License.
 
+//go:build linux
 // +build linux
 
 package procs
@@ -32,8 +33,8 @@ import (
 	"strings"
 
 	"github.com/elastic/beats/libbeat/logp"
-	"github.com/elastic/beats/packetbeat/protos/applayer"
 	"github.com/elastic/gosigar"
+	"github.com/njcx/packetbeat6_dpdk/protos/applayer"
 )
 
 type socketInfo struct {

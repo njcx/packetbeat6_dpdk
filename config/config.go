@@ -22,7 +22,7 @@ import (
 
 	"github.com/elastic/beats/libbeat/common"
 	"github.com/elastic/beats/libbeat/processors"
-	"github.com/elastic/beats/packetbeat/procs"
+	"github.com/njcx/packetbeat6_dpdk/procs"
 )
 
 type Config struct {

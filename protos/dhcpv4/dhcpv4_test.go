@@ -29,7 +29,7 @@ import (
 	"github.com/elastic/beats/libbeat/beat"
 	"github.com/elastic/beats/libbeat/common"
 	"github.com/elastic/beats/libbeat/logp"
-	"github.com/elastic/beats/packetbeat/protos"
+	"github.com/njcx/packetbeat6_dpdk/protos"
 )
 
 var _ protos.UDPPlugin = &dhcpv4Plugin{}

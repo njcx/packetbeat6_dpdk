@@ -15,6 +15,7 @@
 // specific language governing permissions and limitations
 // under the License.
 
+//go:build !integration
 // +build !integration
 
 package tls
@@ -23,7 +24,7 @@ import (
 	"encoding/hex"
 	"testing"
 
-	"github.com/elastic/beats/packetbeat/protos"
+	"github.com/njcx/packetbeat6_dpdk/protos"
 
 	"github.com/stretchr/testify/assert"
 )

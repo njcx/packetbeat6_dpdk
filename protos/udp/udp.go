@@ -23,8 +23,8 @@ import (
 	"github.com/elastic/beats/libbeat/common"
 	"github.com/elastic/beats/libbeat/logp"
 
-	"github.com/elastic/beats/packetbeat/flows"
-	"github.com/elastic/beats/packetbeat/protos"
+	"github.com/njcx/packetbeat6_dpdk/flows"
+	"github.com/njcx/packetbeat6_dpdk/protos"
 )
 
 type UDP struct {

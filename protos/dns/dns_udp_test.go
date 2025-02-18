@@ -40,7 +40,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/elastic/beats/packetbeat/protos"
+	"github.com/njcx/packetbeat6_dpdk/protos"
 
 	"github.com/elastic/beats/libbeat/common"
 

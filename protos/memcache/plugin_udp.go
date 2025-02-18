@@ -27,9 +27,9 @@ import (
 	"github.com/elastic/beats/libbeat/common/streambuf"
 	"github.com/elastic/beats/libbeat/logp"
 
-	"github.com/elastic/beats/packetbeat/procs"
-	"github.com/elastic/beats/packetbeat/protos"
-	"github.com/elastic/beats/packetbeat/protos/applayer"
+	"github.com/njcx/packetbeat6_dpdk/procs"
+	"github.com/njcx/packetbeat6_dpdk/protos"
+	"github.com/njcx/packetbeat6_dpdk/protos/applayer"
 )
 
 type udpMemcache struct {
@@ -70,7 +70,8 @@ type udpTransaction struct {
 // to deal with possible thread safety issues
 //
 // Note: only for cleanup. Transaction was published already,
-//       as publishing is thread safe
+//
+//	as publishing is thread safe
 type udpExpTransList struct {
 	sync.Mutex
 	head *udpTransaction

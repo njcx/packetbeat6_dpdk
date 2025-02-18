@@ -33,7 +33,7 @@ import (
 	"github.com/elastic/beats/libbeat/common/atomic"
 	"github.com/elastic/beats/libbeat/logp"
 
-	"github.com/elastic/beats/packetbeat/config"
+	"github.com/njcx/packetbeat6_dpdk/config"
 )
 
 // Sniffer provides packet sniffing capabilities, forwarding packets read

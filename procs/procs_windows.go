@@ -15,6 +15,7 @@
 // specific language governing permissions and limitations
 // under the License.
 
+//go:build windows
 // +build windows
 
 package procs
@@ -29,7 +30,7 @@ import (
 
 	"golang.org/x/sys/windows"
 
-	"github.com/elastic/beats/packetbeat/protos/applayer"
+	"github.com/njcx/packetbeat6_dpdk/protos/applayer"
 )
 
 var machineEndiannes = getMachineEndiannes()

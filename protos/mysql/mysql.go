@@ -28,9 +28,9 @@ import (
 	"github.com/elastic/beats/libbeat/logp"
 	"github.com/elastic/beats/libbeat/monitoring"
 
-	"github.com/elastic/beats/packetbeat/procs"
-	"github.com/elastic/beats/packetbeat/protos"
-	"github.com/elastic/beats/packetbeat/protos/tcp"
+	"github.com/njcx/packetbeat6_dpdk/procs"
+	"github.com/njcx/packetbeat6_dpdk/protos"
+	"github.com/njcx/packetbeat6_dpdk/protos/tcp"
 )
 
 // Packet types

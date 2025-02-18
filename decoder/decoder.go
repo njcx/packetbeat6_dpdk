@@ -21,11 +21,11 @@ import (
 	"fmt"
 
 	"github.com/elastic/beats/libbeat/logp"
-	"github.com/elastic/beats/packetbeat/flows"
-	"github.com/elastic/beats/packetbeat/protos"
-	"github.com/elastic/beats/packetbeat/protos/icmp"
-	"github.com/elastic/beats/packetbeat/protos/tcp"
-	"github.com/elastic/beats/packetbeat/protos/udp"
+	"github.com/njcx/packetbeat6_dpdk/flows"
+	"github.com/njcx/packetbeat6_dpdk/protos"
+	"github.com/njcx/packetbeat6_dpdk/protos/icmp"
+	"github.com/njcx/packetbeat6_dpdk/protos/tcp"
+	"github.com/njcx/packetbeat6_dpdk/protos/udp"
 
 	"github.com/njcx/gopacket_dpdk"
 	"github.com/njcx/gopacket_dpdk/layers"

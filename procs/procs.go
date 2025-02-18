@@ -24,8 +24,8 @@ import (
 
 	"github.com/elastic/beats/libbeat/common"
 	"github.com/elastic/beats/libbeat/logp"
-	"github.com/elastic/beats/packetbeat/protos/applayer"
 	"github.com/elastic/gosigar"
+	"github.com/njcx/packetbeat6_dpdk/protos/applayer"
 )
 
 // This controls how often process info for a running process is reloaded

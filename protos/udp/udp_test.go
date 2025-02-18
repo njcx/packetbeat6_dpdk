@@ -15,6 +15,7 @@
 // specific language governing permissions and limitations
 // under the License.
 
+//go:build !integration
 // +build !integration
 
 package udp
@@ -26,12 +27,12 @@ import (
 
 	"github.com/elastic/beats/libbeat/common"
 	"github.com/elastic/beats/libbeat/logp"
-	"github.com/elastic/beats/packetbeat/protos"
+	"github.com/njcx/packetbeat6_dpdk/protos"
 
 	// import plugins for testing
-	_ "github.com/elastic/beats/packetbeat/protos/http"
-	_ "github.com/elastic/beats/packetbeat/protos/mysql"
-	_ "github.com/elastic/beats/packetbeat/protos/redis"
+	_ "github.com/njcx/packetbeat6_dpdk/protos/http"
+	_ "github.com/njcx/packetbeat6_dpdk/protos/mysql"
+	_ "github.com/njcx/packetbeat6_dpdk/protos/redis"
 
 	"github.com/stretchr/testify/assert"
 )

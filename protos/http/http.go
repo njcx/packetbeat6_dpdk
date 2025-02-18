@@ -29,8 +29,8 @@ import (
 	"github.com/elastic/beats/libbeat/logp"
 	"github.com/elastic/beats/libbeat/monitoring"
 
-	"github.com/elastic/beats/packetbeat/procs"
-	"github.com/elastic/beats/packetbeat/protos"
+	"github.com/njcx/packetbeat6_dpdk/procs"
+	"github.com/njcx/packetbeat6_dpdk/protos"
 )
 
 var debugf = logp.MakeDebug("http")

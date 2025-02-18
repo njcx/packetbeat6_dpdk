@@ -15,11 +15,12 @@
 // specific language governing permissions and limitations
 // under the License.
 
+//go:build !linux && !windows
 // +build !linux,!windows
 
 package procs
 
-import "github.com/elastic/beats/packetbeat/protos/applayer"
+import "github.com/njcx/packetbeat6_dpdk/protos/applayer"
 
 // GetLocalPortToPIDMapping returns the list of local port numbers and the PID
 // that owns them.

@@ -7,7 +7,7 @@ want to create the protocol analyzer (stand-alone, within packetbeat based
 project or packetbeat itself):
 
 ```
-python ${GOPATH}/src/github.com/elastic/beats/packetbeat/scripts/create_tcp_protocol.py
+python ${GOPATH}/src/github.com/njcx/packetbeat6_dpdk/scripts/create_tcp_protocol.py
 ```
 
 Note: If you have multiple go paths use `${GOPATH%%:*}`instead of `${GOPATH}`.
@@ -102,21 +102,21 @@ func echo(sock net.Conn) {
 Create analyzer skeleton from code generator template. 
 
 ```
-  $ cd ${GOPATH}/src/github.com/elastic/beats/packetbeat
-  $ python ${GOPATH}/src/github.com/elastic/beats/packetbeat/scripts/create_tcp_protocol.py
+  $ cd ${GOPATH}/src/github.com/njcx/packetbeat6_dpdk
+  $ python ${GOPATH}/src/github.com/njcx/packetbeat6_dpdk/scripts/create_tcp_protocol.py
 ```
 
 Load plugin into packetbeat by running `make update`. Or add `_
-"github.com/elastic/beats/packetbeat/protos/echo"` to the import list in
-`$GOPATH/src/github.com/elastic/beats/packetbeat/include/list.go`.
+"github.com/njcx/packetbeat6_dpdk/protos/echo"` to the import list in
+`$GOPATH/src/github.com/njcx/packetbeat6_dpdk/include/list.go`.
 
 ### 2.2 Standalone beat with protocol analyzer (echo):
 
 Use packetbeat as framework to build custom beat (e.g. for testing) with
 selected protocol plugins only. A protocol plugin can still be added to
 packetbeat later by copying the final plugin to
-`$GOPATH/src/github.com/elastic/beats/packetbeat/protos` and importing module in
-`$GOPATH/src/github.com/elastic/beats/packetbeat/include/list.go`.
+`$GOPATH/src/github.com/njcx/packetbeat6_dpdk/protos` and importing module in
+`$GOPATH/src/github.com/njcx/packetbeat6_dpdk/include/list.go`.
 
 Create custom beat (e.g. github.com/<username>/pb_echo):
 
@@ -133,7 +133,7 @@ import (
 	"os"
 
 	"github.com/elastic/beats/libbeat/beat"
-	"github.com/elastic/beats/packetbeat/beater"
+	"github.com/njcx/packetbeat6_dpdk/beater"
 
 	// import supported protocol modules
 	_ "github.com/urso/pb_echo/protos/echo"
@@ -154,7 +154,7 @@ Create protocol analyzer module (use name ‘echo’ for new protocol):
 ```
 $ mkdir proto
 $ cd proto
-$ python ${GOPATH}/src/github.com/elastic/beats/packetbeat/scripts/create_tcp_protocol.py
+$ python ${GOPATH}/src/github.com/njcx/packetbeat6_dpdk/scripts/create_tcp_protocol.py
 ```
 
 ### 3 Implement application layer analyzer

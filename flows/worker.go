@@ -26,8 +26,8 @@ import (
 
 	"github.com/elastic/beats/libbeat/beat"
 	"github.com/elastic/beats/libbeat/common"
-	"github.com/elastic/beats/packetbeat/procs"
-	"github.com/elastic/beats/packetbeat/protos/applayer"
+	"github.com/njcx/packetbeat6_dpdk/procs"
+	"github.com/njcx/packetbeat6_dpdk/protos/applayer"
 )
 
 type flowsProcessor struct {

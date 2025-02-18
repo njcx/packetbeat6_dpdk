@@ -32,19 +32,19 @@ import (
 	"github.com/elastic/beats/libbeat/processors"
 	"github.com/elastic/beats/libbeat/service"
 
-	"github.com/elastic/beats/packetbeat/config"
-	"github.com/elastic/beats/packetbeat/decoder"
-	"github.com/elastic/beats/packetbeat/flows"
-	"github.com/elastic/beats/packetbeat/procs"
-	"github.com/elastic/beats/packetbeat/protos"
-	"github.com/elastic/beats/packetbeat/protos/icmp"
-	"github.com/elastic/beats/packetbeat/protos/tcp"
-	"github.com/elastic/beats/packetbeat/protos/udp"
-	"github.com/elastic/beats/packetbeat/publish"
-	"github.com/elastic/beats/packetbeat/sniffer"
+	"github.com/njcx/packetbeat6_dpdk/config"
+	"github.com/njcx/packetbeat6_dpdk/decoder"
+	"github.com/njcx/packetbeat6_dpdk/flows"
+	"github.com/njcx/packetbeat6_dpdk/procs"
+	"github.com/njcx/packetbeat6_dpdk/protos"
+	"github.com/njcx/packetbeat6_dpdk/protos/icmp"
+	"github.com/njcx/packetbeat6_dpdk/protos/tcp"
+	"github.com/njcx/packetbeat6_dpdk/protos/udp"
+	"github.com/njcx/packetbeat6_dpdk/publish"
+	"github.com/njcx/packetbeat6_dpdk/sniffer"
 
 	// Add packetbeat default processors
-	_ "github.com/elastic/beats/packetbeat/processor/add_kubernetes_metadata"
+	_ "github.com/njcx/packetbeat6_dpdk/processor/add_kubernetes_metadata"
 )
 
 // Beater object. Contains all objects needed to run the beat

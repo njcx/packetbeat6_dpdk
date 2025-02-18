@@ -18,8 +18,8 @@
 package tls
 
 import (
-	"github.com/elastic/beats/packetbeat/config"
-	"github.com/elastic/beats/packetbeat/protos"
+	"github.com/njcx/packetbeat6_dpdk/config"
+	"github.com/njcx/packetbeat6_dpdk/protos"
 )
 
 type tlsConfig struct {

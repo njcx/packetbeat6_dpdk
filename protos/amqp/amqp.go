@@ -27,8 +27,8 @@ import (
 	"github.com/elastic/beats/libbeat/logp"
 	"github.com/elastic/beats/libbeat/monitoring"
 
-	"github.com/elastic/beats/packetbeat/protos"
-	"github.com/elastic/beats/packetbeat/protos/tcp"
+	"github.com/njcx/packetbeat6_dpdk/protos"
+	"github.com/njcx/packetbeat6_dpdk/protos/tcp"
 )
 
 var (
@@ -350,8 +350,8 @@ func (amqp *amqpPlugin) expireTransaction(trans *amqpTransaction) {
 	amqp.transactions.Delete(trans.tuple.Hashable())
 }
 
-//This method handles published messages from clients. Being an async
-//process, the method, header and body frames are regrouped in one transaction
+// This method handles published messages from clients. Being an async
+// process, the method, header and body frames are regrouped in one transaction
 func (amqp *amqpPlugin) handlePublishing(client *amqpMessage) {
 	tuple := client.tcpTuple
 	trans := amqp.getTransaction(tuple.Hashable())
@@ -384,9 +384,9 @@ func (amqp *amqpPlugin) handlePublishing(client *amqpMessage) {
 	amqp.transactions.Delete(trans.tuple.Hashable())
 }
 
-//This method handles delivered messages via basic.deliver and basic.get-ok AND
-//returned messages to clients. Being an async process, the method, header and
-//body frames are regrouped in one transaction
+// This method handles delivered messages via basic.deliver and basic.get-ok AND
+// returned messages to clients. Being an async process, the method, header and
+// body frames are regrouped in one transaction
 func (amqp *amqpPlugin) handleDelivering(server *amqpMessage) {
 	tuple := server.tcpTuple
 	trans := amqp.getTransaction(tuple.Hashable())
@@ -493,7 +493,7 @@ func (amqp *amqpPlugin) publishTransaction(t *amqpTransaction) {
 	})
 }
 
-//function to check if method is async or not
+// function to check if method is async or not
 func isAsynchronous(trans *amqpTransaction) bool {
 	if val, ok := trans.amqp["no-wait"]; ok && val == true {
 		return true
@@ -504,7 +504,7 @@ func isAsynchronous(trans *amqpTransaction) bool {
 		trans.method == "basic.nack"
 }
 
-//function to convert a body slice into a readable format
+// function to convert a body slice into a readable format
 func bodyToString(data []byte) string {
 	ret := make([]string, len(data))
 	for i, c := range data {
@@ -513,7 +513,7 @@ func bodyToString(data []byte) string {
 	return strings.Join(ret, " ")
 }
 
-//function used to check if a body message can be converted to readable string
+// function used to check if a body message can be converted to readable string
 func isStringable(m *amqpMessage) bool {
 	stringable := false
 

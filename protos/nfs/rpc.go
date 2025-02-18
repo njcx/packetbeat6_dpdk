@@ -30,8 +30,8 @@ import (
 
 	"fmt"
 
-	"github.com/elastic/beats/packetbeat/protos"
-	"github.com/elastic/beats/packetbeat/protos/tcp"
+	"github.com/njcx/packetbeat6_dpdk/protos"
+	"github.com/njcx/packetbeat6_dpdk/protos/tcp"
 )
 
 var debugf = logp.MakeDebug("rpc")

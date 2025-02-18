@@ -32,8 +32,8 @@ import (
 	"net"
 	"testing"
 
-	"github.com/elastic/beats/packetbeat/protos"
-	"github.com/elastic/beats/packetbeat/protos/tcp"
+	"github.com/njcx/packetbeat6_dpdk/protos"
+	"github.com/njcx/packetbeat6_dpdk/protos/tcp"
 
 	"github.com/elastic/beats/libbeat/common"
 

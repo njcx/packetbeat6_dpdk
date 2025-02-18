@@ -21,7 +21,7 @@ import (
 	"errors"
 
 	"github.com/elastic/beats/libbeat/plugin"
-	"github.com/elastic/beats/packetbeat/protos"
+	"github.com/njcx/packetbeat6_dpdk/protos"
 )
 
 type protocolPlugin struct {
