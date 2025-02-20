@@ -36,13 +36,14 @@ type Config struct {
 }
 
 type InterfacesConfig struct {
-	Device       string `config:"device"`
-	Type         string `config:"type"`
-	File         string `config:"file"`
-	WithVlans    bool   `config:"with_vlans"`
-	BpfFilter    string `config:"bpf_filter"`
-	Snaplen      int    `config:"snaplen"`
-	BufferSizeMb int    `config:"buffer_size_mb"`
+	Device       string   `config:"device"`
+	Type         string   `config:"type"`
+	File         string   `config:"file"`
+	WithVlans    bool     `config:"with_vlans"`
+	BpfFilter    string   `config:"bpf_filter"`
+	Snaplen      int      `config:"snaplen"`
+	BufferSizeMb int      `config:"buffer_size_mb"`
+	DpdkOptions  []string `config:"dpdk_options"`
 	TopSpeed     bool
 	Dumpfile     string
 	OneAtATime   bool
