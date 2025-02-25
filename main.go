@@ -21,12 +21,15 @@ import (
 	"os"
 
 	"github.com/njcx/packetbeat6_dpdk/cmd"
+	"github.com/njcx/packetbeat6_dpdk/dpdkinit"
 )
 
 var Name = "packetbeat"
 
 // Setups and Runs Packetbeat
 func main() {
+
+	dpdkinit.DpdkInit()
 	if err := cmd.RootCmd.Execute(); err != nil {
 		os.Exit(1)
 	}
