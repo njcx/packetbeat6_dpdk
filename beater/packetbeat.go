@@ -65,12 +65,17 @@ type flags struct {
 	oneAtAtime *bool
 	topSpeed   *bool
 	dumpfile   *string
+
+	dpdkPort   *string
+	dpdkStatus *string
 }
 
 var cmdLineArgs flags
 
 func init() {
 	cmdLineArgs = flags{
+		dpdkStatus: flag.String("dpdk_status", "", "Set dpdk status,  enable, disable or nil"),
+		dpdkPort:   flag.String("dpdk_port", "", "Set dpdk port"),
 		file:       flag.String("I", "", "Read packet data from specified file"),
 		loop:       flag.Int("l", 1, "Loop file. 0 - loop forever"),
 		oneAtAtime: flag.Bool("O", false, "Read packets one at a time (press Enter)"),

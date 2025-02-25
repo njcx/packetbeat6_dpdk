@@ -42,6 +42,8 @@ func init() {
 	runFlags.AddGoFlag(flag.CommandLine.Lookup("O"))
 	runFlags.AddGoFlag(flag.CommandLine.Lookup("l"))
 	runFlags.AddGoFlag(flag.CommandLine.Lookup("dump"))
+	runFlags.AddGoFlag(flag.CommandLine.Lookup("dpdk_status"))
+	runFlags.AddGoFlag(flag.CommandLine.Lookup("dpdk_port"))
 
 	RootCmd = cmd.GenRootCmdWithRunFlags(Name, "", beater.New, runFlags)
 	RootCmd.AddCommand(genDevicesCommand())
